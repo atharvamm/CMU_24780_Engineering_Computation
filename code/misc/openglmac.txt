@@ -1,0 +1,19 @@
+(base)$ g++ fssimplewindowobjc.m -c
+(base)$ mkdir -p test.app/Contents/MacOS
+(base)$ g++ -std=c++11 ps7.cpp fssimplewindowcpp.cpp fssimplewindowobjc.o -framework Cocoa -framework OpenGL -o test.app/Contents/MacOS/test
+(base)$ ./test.app/Contents/MacOS/test 
+
+
+# lAudio 
+
+(base)$ g++ yssimplesound_macosx_objc.m -c
+(base)$ mkdir -p test.app/Contents/MacOS
+(base)$ mkdir -p Contents/Resources
+(base)$ g++ -std=c++11 ps6.cpp fssimplewindowcpp.cpp fssimplewindowobjc.o yssimplesound.cpp yssimplesound_macosx_objc.o -framework Cocoa -framework OpenGL -framework AVFoundation -o test.app/Contents/MacOS/test
+(base)$ ./test.app/Contents/MacOS/test 
+
+
+
+notice.wav
+o4cdefgab.wav
+prop5.wav

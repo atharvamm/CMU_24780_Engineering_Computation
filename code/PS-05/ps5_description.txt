@@ -1,0 +1,11 @@
+PS05 Description
+
+- The program draws a windmill like structure with line stiples for its base. To draw this structure it takes X and Y co-ordinates of the center.
+- To use the program run the code, enter the X and Y co-ordinates and it would render an illustration on the screen. You can later control the figure with the UP/DOWN/LEFT/RIGHT Arrow Keys
+- Features
+    - OpenGL animation with double buffering
+    - Runs the animation in a while loop until the user wants to terminate.
+    - Interacts with the user by requesting X and Y Co-ordinates
+    - Uses line stipple
+    - Uses GL_LINES, GL_POINTS,GL_TRIANGLE_FAN
+    - Uses math library to find the angles for vertices of the fan. 
