@@ -11,3 +11,7 @@
 (base)$ mkdir -p Contents/Resources
 (base)$ g++ -std=c++11 ps6.cpp fssimplewindowcpp.cpp fssimplewindowobjc.o yssimplesound.cpp yssimplesound_macosx_objc.o -framework Cocoa -framework OpenGL -framework AVFoundation -o test.app/Contents/MacOS/test
 (base)$ ./test.app/Contents/MacOS/test 
+
+
+# Copy template.ext as template1.ext
+find . -type f -name 'template.*' -exec sh -c 'cp "$1" "template1.${1##*.}"' _ {} \;
